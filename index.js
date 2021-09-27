@@ -20,9 +20,10 @@ connection.connect(err => {
         findSpecies('cat')
     // UPDATE
         // intentionally commented out to not run every time
-        animalBirthday('Lola Copabannannas Foster and Pulaski Daylight Savings Time to Party', 7)
+        // animalBirthday('Lola Copabannannas Foster and Pulaski Daylight Savings Time to Party', 7)
     // DELETE
         // intentionally commented out to not run every time
+        // tooManyPuppies('Reba Big Mcentire Value Meal')
 });
 
 // READ
@@ -77,3 +78,7 @@ const animalBirthday = (animalName, newAge) => {
 }
 
 // DELETE
+const tooManyPuppies = (animalName) => {
+    connection.query(`DELETE FROM animal_table WHERE animalName="${animalName}"`)
+    findDogs()
+}
