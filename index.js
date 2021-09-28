@@ -12,17 +12,16 @@ connection.connect(err => {
     console.log(`connected as id ${connection.threadId}`)
     // query runs inside connection to make sure connection has happened first (eliminates possible errors)
 
+    // create, update, and read commented out to not run every time
+    
     // CREATE
-        // intentionally commented out to not run every time
         // addAnimal('Reba Big Mcentire Value Meal', 'dog', -3)
     // READ
         findDogs()
         findSpecies('cat')
     // UPDATE
-        // intentionally commented out to not run every time
         // animalBirthday('Lola Copabannannas Foster and Pulaski Daylight Savings Time to Party', 7)
     // DELETE
-        // intentionally commented out to not run every time
         // tooManyPuppies('Reba Big Mcentire Value Meal')
 });
 
