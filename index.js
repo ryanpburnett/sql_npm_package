@@ -12,7 +12,7 @@ connection.connect(err => {
     console.log(`connected as id ${connection.threadId}`)
     // query runs inside connection to make sure connection has happened first (eliminates possible errors)
 
-    // create, update, and read commented out to not run every time
+    // create, update, and delete commented out to not run every time
     
     // CREATE
         // addAnimal('Reba Big Mcentire Value Meal', 'dog', -3)
